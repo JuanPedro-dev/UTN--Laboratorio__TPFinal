@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1653006607 source:g:\otros ordenadores\mi portátil\carpeta drive\utn\1º cuatrimestre\programacion\trabajo final - programacion\main.c
+	<stdio.h>
+	<stdlib.h>
+	<windows.h>
+	<locale.h>
+	<string.h>
+
