@@ -1,0 +1,62 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+int main()
+{
+    Cargar_Biblioteca()
+    return 0;
+}
+
+
+///Esta funcion Muestra los Libros que hay actualmente en la Biblioteca
+void MostrarLibros (int libros[], int validos)
+{
+
+ for(int i=0; i< validos; i++)
+      {
+        printf ("i: %d -> valor: %d \n",i, libros[i]);
+      }
+printf("\n");
+}
+
+///Esta funcion Carga los libros en la Biblioteca, la Biblioteca predefino capacidad(dimension) para 100 libros y los validos me los retorna la funcion de cargar libros
+Modularizo la carga de libros y la carga de la Biblioteca por separado.
+
+void Cargar_Biblioteca()
+{
+const int DIMENSION=100;
+int libros[DIMENSION];
+int validos = 0;
+validos= cargarLibros(libros,DIMENSION);
+mostrarLibros(libros,validos);
+
+}
+
+
+cargarLibros( int libro[], int dimension)
+{
+    int validos = 0;
+    const int TECLA_ESC=27;
+    int TeclaUsuario=0;
+    int i=0;
+    while (TeclaUsuario != TECLA_ESC && validos < dimension)
+    {
+    printf("Escriba el Titulo del Libro que desea guardar \n");
+    
+    //// Tengo un problema  aca, no me sale como  poder Guardar en el arreglo libros como string con el nombre del libro (a resolver)
+////    char libro;
+////    fflush(stdin);
+////    scanf("%s",&libro);
+
+    libro[i]= libro;
+
+    printf("para continuar presione una tecla \n");
+    printf("para salir presione ESC \n");
+
+    fflush(stdin);
+    TeclaUsuario=getch();
+
+    validos++;
+    i++;
+
+    }
