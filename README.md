@@ -2,7 +2,7 @@
 <hr>
 
 # Trabajo Práctico Final: integración del contenido <br>
-<h3 align="center"> UTN -> Introducción</h3>
+<h3> UTN -> Introducción</h3>
 <hr>
 <br>
 
