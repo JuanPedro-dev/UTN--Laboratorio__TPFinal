@@ -10,16 +10,18 @@
     nombre de los archivos.
 	archivoLectores.bin
 	archivoLibros.bin
+
+	No usamos variable global para ver la dimension de listaFavoritos pues falla alguna veces...
 */
 
 typedef struct
 {
-    int id;
+    char nombre[30];
     char mail[45];
     char password[15];
+    int id;
     int listaFavoritos[10]; // máximo 10 favoritos...
     int validos;
-    char nombre[30];
     int activo;    // alta de usuario. 1: activo y 0: inactivo.
 } stLector;
 
@@ -46,6 +48,11 @@ void mostrarLector(const stLector lector);
 void mostrarArchivo_Lectores();
 stLector validarLector();
 int posicionLector_id(const int id);
+void darBajaLector(const int indice);
+void modificarLector(const int indice);
+void leerFavoritos_lector(const int indice); // modificar para ver los nombres de los libros
+
+
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -93,54 +100,94 @@ void menuAdministrador()
     printf("    4. Ver los libros favoritos de un lector: \n");
     printf("    5. Dar de alta un libro: \n");
     printf("    6. Modicar los atributos de un libro: \n");
-    printf("    7. Dar de baja un libro: \n\n");
-    printf("    0. Volver: \n\n");
+    printf("    7. Dar de baja un libro: \n");
+    printf("    8. Agregar un libro: \n\n");
+    printf("    0. Salir o Volver al menu principal.\n");
+
     printf(" Opción: ");
 }
 
 void administrador_case(const int option)
 {
+    int indice;
+    int id_user;
     switch(option)
     {
     case 1:
         printf("                            La Lista de Lectores\n\n");
         mostrarArchivo_Lectores();
         printf("                            Fin Lista de Lectores\n\n");
+        system("pause");
         break;
     case 2:
-        printf("                            Dar de baja un lectores:\n\n");
-        int id_user;
-        printf("Ingrese el ID del lector: \n");
+        printf("                            Dar de baja un lectores\n\n");
+        printf("Ingrese el ID del lector: ");
         fflush(stdin);
         scanf("%d", &id_user);
-
-
-
-        break;
-    }
-}
-
-int posicionLector_id(const int id)
-{
-    int posicion = -1; // si return -1 significa que no se encuentra
-    stLector aux;
-    FILE * archivo = fopen(archivoLectores, "a+b");
-    if(archivo != NULL)
-    {
-        while(fread(&aux, sizeof(stLector), 1, archivo) > 0)
+        indice = posicionLector_id(id_user);
+        if(indice!=-1)
         {
-            if(aux.id == id)
-            {
-                posicion = ftell(archivo) / sizeof(stLector);
-            }
+            darBajaLector(indice);
+        } else
+        {
+            printf("No se encuentra el ID del lector.\n");
         }
-        fclose(archivo);
-    } else
-    {
-        printf("Error: no se pudo cargar el archivo.\n");
+        system("pause");
+        break;
+    case 3:
+        printf("                            Modificar los datos de un lector \n\n");
+        printf("Ingrese el ID del lector: ");
+        fflush(stdin);
+        scanf("%d", &id_user);
+        indice = posicionLector_id(id_user);
+        if(indice!=-1)
+        {
+            modificarLector(indice);
+        } else
+        {
+            printf("No se encuentra el ID del lector.\n");
+        }
+        printf(">>> Se ha modificado con éxito.\n");
+        system("pause");
+        break;
+    case 4:
+        printf("                            Ver los libros favoritos de un lector\n\n");
+        printf("Ingrese el ID del lector: ");
+        fflush(stdin);
+        scanf("%d", &id_user);
+        indice = posicionLector_id(id_user);
+        if(indice!=-1)
+        {
+            leerFavoritos_lector(indice);
+        } else
+        {
+            printf("No se encuentra el ID del lector.\n");
+        }
+        system("pause");
+        break;
+        ///////////////////////////////////////////////////////////////////////////////////////
+    case 5:
+        printf("                            Dar de alta un libro\n\n");
+        printf("Ingrese el ID del libro: ");
+        fflush(stdin);
+        scanf("%d", &id_user);
+        indice = posicionLector_id(id_user); // cambiar buscar posicion que tiene un libro.
+        if(indice!=-1)
+        {
+            //funcion que modifica un libro
+        } else
+        {
+            printf("No se encuentra el ID del libro.\n");
+        }
+        printf(">>> Se ha modificado con éxito.\n");
+        system("pause");
+        break;
+
+        ///////////////////////////////////////////////////////////////////////////////////////
     }
-    return posicion;
 }
+
+
 
 
 int main()
@@ -160,67 +207,74 @@ int main()
     lectores[0].listaFavoritos[1] = 123;
     lectores[0].listaFavoritos[2] = 321;
     lectores[0].validos = 3;
-    //registrarLector(&lectores[0]);
+//    registrarLector(&lectores[0]);
 
-    printf("la posicion del id es: %d", posicionLector_id(1));
+
+
+    mostrarArchivo_Lectores();
+
+
+
 
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-//    // Repito el programa hasta que decida salir
-//    while (option !='s' && option!='S')
-//    {
+    // Repito el programa hasta que decida salir
+    while (option !='s' && option!='S')
+    {
 //        system("cls");
-//        int usuario = menu_inicio();
-//        if(usuario == 1)
-//        {
-//            stLector Lector_actual;
-//            char user_actual[30];
-//            char user_password;
-//            int option_lector;
-//            printf("                                    Sistema de Biblioteca (Lector).\n\n");
-//
-////            option_lector = funcionJuan;
-//
-//
-//
-//        }
-//        else
-//        {
-//            printf("                                    Sistema de Biblioteca (Administrador).\n\n");
-//            int reintentarAdministrador = 's';
-//            while (reintentarAdministrador == 's' || reintentarAdministrador == 'S')
-//            {
-//                printf("Iniciar sesión: \n\n");
-//
-//                if(validarAdministrador() == 1) // Todo correcto esta dentro del administrador
-//                {
-//                    int option = 1;
-//                    while(option != 0)
-//                    {
-//                        printf("\n>>                                Bienvenido a la biblioteca.\n\n");
-//                        menuAdministrador();
-//                        fflush(stdin);
-//                        scanf("%d", &option);
-//                        administrador_case(option);
-//                        reintentarAdministrador = 'n';
-//                    }
-//                }
-//                else
-//                {
-//                    printf(">>                          Ha ingresado un usuario o contraseña incorrecta.\n");
-//                    printf("¿Desea reintentar? s/n. ");
-//                    fflush(stdin);
-//                    scanf("%c", &reintentarAdministrador);
-//                }
-//            }
-//        }
-//        printf("¿Desea salir? s/n. ");
-//        fflush(stdin);
-//        scanf("%c", &option);
-//    }
-//
+        int usuario = menu_inicio();
+        if(usuario == 1)
+        {
+            stLector Lector_actual;
+            char user_actual[30];
+            char user_password;
+            int option_lector;
+            printf("                                    Sistema de Biblioteca (Lector).\n\n");
 
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//            option_lector = funcionJuan;
+
+
+
+        }
+        else
+        {
+            printf("                                    Sistema de Biblioteca (Administrador).\n\n");
+            int reintentarAdministrador = 's';
+            while (reintentarAdministrador == 's' || reintentarAdministrador == 'S')
+            {
+                printf("Iniciar sesión: \n\n");
+
+                if(validarAdministrador() == 1) // Todo correcto esta dentro del administrador
+                {
+                    int option = 1;
+                    while(option != 0)
+                    {
+                        printf("\n>>                                Bienvenido a la biblioteca.\n\n");
+                        menuAdministrador();
+                        fflush(stdin);
+                        scanf("%d", &option);
+                        administrador_case(option);
+                        reintentarAdministrador = 'n';
+                    }
+                }
+                else
+                {
+                    printf(">>                          Ha ingresado un usuario o contraseña incorrecta.\n");
+                    printf("¿Desea reintentar? s/n. ");
+                    fflush(stdin);
+                    scanf("%c", &reintentarAdministrador);
+                }
+            }
+        }
+        printf("¿Desea salir? s/n. ");
+        fflush(stdin);
+        scanf("%c", &option);
+    }
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
 
     printf("\n\n>>>                         Fin programa!\n");
     return 0;
@@ -275,7 +329,7 @@ int validarAdministrador()
 
 void registrarLector(stLector * lector)
 {
-    FILE* archivo = fopen("archivoLectores.bin", "ab");
+    FILE * archivo = fopen(archivoLectores, "ab");
     if(archivo != NULL)
     {
         fwrite(lector, sizeof(stLector), 1, archivo);
@@ -301,8 +355,8 @@ void mostrarLector(const stLector lector)
         printf("  Estado Activo: \t\t|  dado de baja (%i) \n", lector.activo);
     }
 
-    printf(" Nº de libros favoritos: \t|  %i\n", lector.validos);
-    for(int i = 0; i < lector.validos; i++)
+    printf("  Nº de libros favoritos: \t|  %i\n", lector.validos);
+    for(int i = 0; i < lector.validos && i < 10; i++) // i<10 (10 max libros fav)
     {
         printf("  libro favorito %i, \t\t|  codigo: %i \n",i,lector.listaFavoritos[i]);
     }
@@ -311,7 +365,7 @@ void mostrarLector(const stLector lector)
 
 void mostrarArchivo_Lectores()
 {
-    FILE * archivo = fopen("archivoLectores.bin", "rb");
+    FILE * archivo = fopen(archivoLectores, "rb");
     stLector aux;
 
     if(archivo != NULL)
@@ -328,6 +382,162 @@ void mostrarArchivo_Lectores()
         printf("Error: no se pudo abrir el archivo.\n");
     }
 }
+
+int posicionLector_id(const int id)
+{
+    int indice = -1; // si return -1 significa que no se encuentra
+    stLector aux;
+    FILE * archivo = fopen(archivoLectores, "a+b");
+    if(archivo != NULL)
+    {
+        while(fread(&aux, sizeof(stLector), 1, archivo) > 0)
+        {
+            if(aux.id == id)
+            {
+                indice = ftell(archivo) / sizeof(stLector);
+                indice--;
+            }
+        }
+        fclose(archivo);
+    } else
+    {
+        printf("Error: no se pudo cargar el archivo.\n");
+    }
+    return indice;
+}
+
+void darBajaLector(const int indice)
+{
+    stLector aux;
+    FILE * archivo = fopen(archivoLectores, "r+b"); //leer y modificar
+    if(archivo != NULL)
+    {
+        //Me paro en la posicion del alumno
+        fseek(archivo, (indice)*sizeof(stLector), SEEK_SET);
+        fread(&aux, sizeof(stLector), 1, archivo );
+        fseek(archivo, (indice)*sizeof(stLector), SEEK_SET);    // vuelvo
+
+        if(aux.activo == 1)
+        {
+        aux.activo =0;
+        fwrite(&aux, sizeof(stLector), 1, archivo);
+        printf("Baja con éxito.\n");
+        } else
+        {
+        printf("El Lector ya se encuentra dado de baja.\n");
+        }
+
+        fclose(archivo);
+    } else
+    {
+        printf("Error: no se pudo cargar el archivo.\n");
+    }
+}
+
+void modificarLector(const int indice)
+{
+    char nombre[30];
+    char email[45];
+    char password[15];
+    stLector aux;
+    FILE * archivo = fopen(archivoLectores, "r+b"); //leer y modificar
+    if(archivo != NULL)
+    {
+        //Me paro en la posicion del alumno
+        fseek(archivo, (indice)*sizeof(stLector), SEEK_SET);
+        fread(&aux, sizeof(stLector), 1, archivo );
+        fseek(archivo, (indice)*sizeof(stLector), SEEK_SET);    // vuelvo
+
+        printf("Ingrese el nombre: ");
+        fflush(stdin);
+        gets(nombre);
+        strcpy(aux.nombre, nombre);
+
+        printf("Ingrese el email: ");
+        fflush(stdin);
+        gets(email);
+        strcpy(aux.mail, email);
+
+        printf("Ingrese la contraseña: ");
+        fflush(stdin);
+        gets(password);
+        strcpy(aux.password, password);
+
+        printf("ID: No puede modificarlo evitar errores.\n");
+
+        int validos = 0;
+        const int TECLA_ESC=27;
+        int TeclaUsuario=0;
+        int i=0;
+        while (TeclaUsuario != TECLA_ESC && validos < 10) // validos<10 porque dimension max son 10 libros
+        {
+            printf("Escriba el código del Libro que desea guardar: ");
+
+            int libro;
+            fflush(stdin);
+            scanf("%d",&libro);
+
+            aux.listaFavoritos[i]= libro;
+
+            printf("\n>>> Para continuar cargando presione una tecla. \n");
+            printf(">>> Para salir presione ESC. \n");
+            fflush(stdin);
+            TeclaUsuario = getch();
+
+            validos++;
+            i++;
+        }
+
+        aux.validos = validos;
+
+        do
+        {
+            printf("Ingrese 1 para activo o 0 para inactivo: \n");
+            fflush(stdin);
+            scanf("%d",&aux.activo);
+        } while(aux.activo!=0 && aux.activo!=1);
+
+        fwrite(&aux, sizeof(stLector), 1, archivo);
+        fclose(archivo);
+    } else
+    {
+        printf("Error: no se pudo cargar el archivo.\n");
+    }
+}
+
+void leerFavoritos_lector(const int indice)
+{
+    stLector aux;
+    FILE * archivo = fopen(archivoLectores, "rb");
+    if(archivo != NULL)
+    {
+        fseek(archivo,(indice) * sizeof(stLector), SEEK_SET);   // Me paro en el index
+        fread(&aux, sizeof(stLector), 1, archivo);              // Leo y se dezplaca
+
+        for(int i=0; i< aux.validos; i++)
+        {
+
+            printf("Código: %d\n", aux.listaFavoritos[i]);
+            printf("Comparar con id de libros y mostrar los nombres.\n");
+        }
+
+        fclose(archivo);
+    } else
+    {
+        printf("Error: no se pudo abrir el archivo.\n");
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 
