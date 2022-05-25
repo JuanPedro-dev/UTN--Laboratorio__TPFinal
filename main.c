@@ -90,10 +90,34 @@ stLector validarLector(const char mail[], const char password[])
     return aux; // como hago para devolver el
 }
 
+void menuLector()
+{
+    printf("\t\t\t+=========================+=========================+\n");
+    printf("\t\t\t|                 MENU DE LECTORES                  |\n");
+    printf("\t\t\t+=========================+=========================+\n");
+    printf("    1. Registrarse.     \n");
+    printf("    2. Login/Entrar.    \n");
+    printf("    3. Ver mi Perfil.   \n");
+    printf("    4. Ver lista de libros. \n");
+    printf("    5. Mostrar libro(Caracteristicas).   \n");
+    printf("    6. Marcar como favorito un libro.\n");
+    printf("    7. Desmarcar como favorito un libro.\n");
+    printf("    8. Ver mis libros favoritos.\n");
+    printf("    9. Ver mis libros favoritos.\n");
+    printf("   10. Darse de baja de la aplicación.\n\n");
+    printf("    0. Salir o Volver al menu principal.\n");
+
+    printf("\n ELIJA UNA OPCIÓN: ");
+}
+
+
+
 
 void menuAdministrador()
 {
-    printf(" Sistema de Biblioteca (Administrador).\n\n");
+    printf("\t\t\t+=========================+=========================+\n");
+    printf("\t\t\t|               MENU DEL ADMINISTRADOR              |\n");
+    printf("\t\t\t+=========================+=========================+\n");
     printf("    1. Ver lista de lectores: \n");
     printf("    2. Dar de baja un lectores: \n");
     printf("    3. Modificar los datos de un lector: \n");
@@ -104,19 +128,25 @@ void menuAdministrador()
     printf("    8. Agregar un libro: \n\n");
     printf("    0. Salir o Volver al menu principal.\n");
 
-    printf(" Opción: ");
+    printf("\n ELIJA UNA OPCIÓN: ");
 }
 
 void administrador_case(const int option)
 {
     int indice;
     int id_user;
+
     switch(option)
     {
     case 1:
-        printf("                            La Lista de Lectores\n\n");
+        printf("\t\t\t+=========================+=========================+\n");
+        printf("\t\t\t|                 LISTA DE LECTORES                 |\n");
+        printf("\t\t\t+=========================+=========================+\n");
+        printf("                            \n\n");
         mostrarArchivo_Lectores();
-        printf("                            Fin Lista de Lectores\n\n");
+        printf("\t\t\t+=========================+=========================+\n");
+        printf("\t\t\t|               FIN LISTA DE LECTORES               |\n");
+        printf("\t\t\t+=========================+=========================+\n");
         system("pause");
         break;
     case 2:
@@ -218,6 +248,7 @@ int main()
 
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
     // Repito el programa hasta que decida salir
     while (option !='s' && option!='S')
     {
@@ -225,31 +256,27 @@ int main()
         int usuario = menu_inicio();
         if(usuario == 1)
         {
+                                        // Sistema lector
             stLector Lector_actual;
             char user_actual[30];
             char user_password;
             int option_lector;
-            printf("                                    Sistema de Biblioteca (Lector).\n\n");
-
-//            option_lector = funcionJuan;
-
-
-
+            menuLector();
         }
         else
         {
-            printf("                                    Sistema de Biblioteca (Administrador).\n\n");
+            printf("\t\t\t+=========================+=========================+\n");
+            printf("\t\t\t|               MENU DEL ADMINISTRADOR              |\n");
+            printf("\t\t\t+=========================+=========================+\n");
             int reintentarAdministrador = 's';
             while (reintentarAdministrador == 's' || reintentarAdministrador == 'S')
             {
                 printf("Iniciar sesión: \n\n");
-
                 if(validarAdministrador() == 1) // Todo correcto esta dentro del administrador
                 {
                     int option = 1;
                     while(option != 0)
                     {
-                        printf("\n>>                                Bienvenido a la biblioteca.\n\n");
                         menuAdministrador();
                         fflush(stdin);
                         scanf("%d", &option);
@@ -270,8 +297,6 @@ int main()
         fflush(stdin);
         scanf("%c", &option);
     }
-
-
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
@@ -284,20 +309,23 @@ int main()
 int menu_inicio()
 {
     int option;
-    printf("                                    Sistema de Biblioteca.\n\n");
+    printf("\t\t\t+=========================+=========================+\n");
+    printf("\t\t\t|               SISTEMA DE BIBLIOTECA               |\n");
+    printf("\t\t\t+=========================+=========================+\n");
 
     do
     {
         printf(" Seleccione una opción para continuar.\n");
         printf("    1. Lector.\n");
-        printf("    2. Administrador.\n\n");
+        printf("    2. Administrador.\n");
 
-        printf("   Tu respuesta: ");
+
+        printf("\n ELIJA UNA OPCIÓN: ");
         fflush(stdin);
         scanf("%d", &option);
         if(option!=1 && option!=2)
         {
-            printf(">>>                         Error, ingrese un valor valido.\n\n");
+            printf("                         >>> Error, ingrese un valor valido. <<<\n\n");
         }
     }
     while(option != 1 && option!=2);
