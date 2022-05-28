@@ -31,6 +31,14 @@
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
+		<Unit filename="archivos/lectores.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="archivos/lectores.h" />
+		<Unit filename="archivos/persistenciaLectores.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="archivos/persistenciaLectores.h" />
 		<Unit filename="main.c">
 			<Option compilerVar="CC" />
 		</Unit>

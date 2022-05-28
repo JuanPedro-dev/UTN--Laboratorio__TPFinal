@@ -3,9 +3,11 @@
 #include <windows.h>
 #include <locale.h>
 #include <string.h>
+
 #define  archivoLectores "archivoLectores.bin"
 #define  archivoLibros "archivoLibros.bin"
 
+#include "./archivos/lectores.h"
 /**
     nombre de los archivos.
 	archivoLectores.bin
@@ -14,35 +16,7 @@
 	No usamos variable global para ver la dimension de listaFavoritos pues falla alguna veces...
 */
 
-typedef struct
-{
-    char nombre[30];
-    char mail[45];
-    char password[15];
-    int id;
-    int listaFavoritos[10]; // máximo 10 favoritos...
-    int validos;
-    int activo;             // alta de usuario. 1: activo y 0: inactivo.
-} stLector;
-
-typedef struct
-{
-    int id;
-    char nombre[50];
-    char autor[30];
-    char genero[15];        // Terror, aventura,
-    int activo;    // alta de libro. 1: alta y 0: baja.
-} stLibro;
-
-typedef struct
-{
-    int id;
-    char mail[45];
-    char password[15];
-} stAdministrador;
-
 void verificar_archivos();                      // Crea los archivos si es que no existen.
-int menu_inicio();                              // Menu 1
 
                                 // Lector funciones
 void registrarLector(stLector * lector);
@@ -373,33 +347,6 @@ int main()
 
     printf("\n\n>>>                         Fin programa!\n");
     return 0;
-}
-
-
-int menu_inicio()
-{
-    int option;
-    printf("\t\t\t+=========================+=========================+\n");
-    printf("\t\t\t|               SISTEMA DE BIBLIOTECA               |\n");
-    printf("\t\t\t+=========================+=========================+\n");
-
-    do
-    {
-        printf(" Seleccione una opción para continuar.\n");
-        printf("    1. Lector.\n");
-        printf("    2. Administrador.\n");
-
-
-        printf("\n ELIJA UNA OPCIÓN: ");
-        fflush(stdin);
-        scanf("%d", &option);
-        if(option!=1 && option!=2)
-        {
-            printf("                         >>> Error, ingrese un valor valido. <<<\n\n");
-        }
-    }
-    while(option != 1 && option!=2);
-    return option;
 }
 
 int validarAdministrador()

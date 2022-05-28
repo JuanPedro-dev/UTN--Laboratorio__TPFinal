@@ -13,3 +13,18 @@
 	<locale.h>
 	<string.h>
 
+1653699900 source:g:\otros ordenadores\mi portátil\carpeta drive\utn\1º cuatrimestre\programacion\trabajo final - programacion\archivos\lectores.c
+	"./lectores.h"
+
+1653699900 g:\otros ordenadores\mi portátil\carpeta drive\utn\1º cuatrimestre\programacion\trabajo final - programacion\archivos\lectores.h
+
+1653699941 source:g:\otros ordenadores\mi portátil\carpeta drive\utn\1º cuatrimestre\programacion\trabajo final - programacion\archivos\persistencialectores.c
+	<stdio.h>
+	<stdlib.h>
+	<windows.h>
+	<locale.h>
+	<string.h>
+	"./persistenciaLectores.h"
+
+1653699900 g:\otros ordenadores\mi portátil\carpeta drive\utn\1º cuatrimestre\programacion\trabajo final - programacion\archivos\persistencialectores.h
+
