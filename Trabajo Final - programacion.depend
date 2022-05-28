@@ -1,12 +1,12 @@
 # depslib dependency file v1.0
-1653437522 source:g:\otros ordenadores\mi portátil\carpeta drive\utn\1º cuatrimestre\programacion\trabajo final - programacion\main.c
+1653609425 source:g:\otros ordenadores\mi portátil\carpeta drive\utn\1º cuatrimestre\programacion\trabajo final - programacion\main.c
 	<stdio.h>
 	<stdlib.h>
 	<windows.h>
 	<locale.h>
 	<string.h>
 
-1653500515 source:c:\users\equipo\desktop\carpeta drive\utn\1º cuatrimestre\programacion\trabajo final - programacion\main.c
+1653575302 source:c:\users\equipo\desktop\carpeta drive\utn\1º cuatrimestre\programacion\trabajo final - programacion\main.c
 	<stdio.h>
 	<stdlib.h>
 	<windows.h>
