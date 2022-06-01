@@ -31,6 +31,30 @@
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
+		<Unit filename="librerias/lectores.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="librerias/lectores.h" />
+		<Unit filename="librerias/lectores_Persistencia.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="librerias/lectores_Persistencia.h" />
+		<Unit filename="librerias/libros.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="librerias/libros.h" />
+		<Unit filename="librerias/libros_Persistencia.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="librerias/libros_Persistencia.h" />
+		<Unit filename="librerias/utilidades.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="librerias/utilidades.h" />
+		<Unit filename="librerias/utilidades_Persistencia.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="librerias/utilidades_Persistencia.h" />
 		<Unit filename="main.c">
 			<Option compilerVar="CC" />
 		</Unit>

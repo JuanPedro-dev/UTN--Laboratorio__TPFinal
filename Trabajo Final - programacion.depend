@@ -6,10 +6,70 @@
 	<locale.h>
 	<string.h>
 
-1653575302 source:c:\users\equipo\desktop\carpeta drive\utn\1º cuatrimestre\programacion\trabajo final - programacion\main.c
+1653747582 source:c:\users\equipo\desktop\carpeta drive\utn\1º cuatrimestre\programacion\trabajo final - programacion\main.c
 	<stdio.h>
 	<stdlib.h>
 	<windows.h>
 	<locale.h>
 	<string.h>
+
+1654043364 source:g:\otros ordenadores\mi portátil\carpeta drive\utn\1º cuatrimestre\programacion\zzzzz\trabajo final - programacion\main.c
+	<stdio.h>
+	<stdlib.h>
+	<windows.h>
+	<locale.h>
+	<string.h>
+	"./librerias/utilidades.h"
+	"./librerias/lectores.h"
+
+1654043365 source:g:\otros ordenadores\mi portátil\carpeta drive\utn\1º cuatrimestre\programacion\zzzzz\trabajo final - programacion\librerias\utilidades.c
+	<stdio.h>
+	<stdlib.h>
+	<windows.h>
+	<locale.h>
+	<string.h>
+	"./utilidades.h"
+	"./lectores.h"
+
+1654043365 g:\otros ordenadores\mi portátil\carpeta drive\utn\1º cuatrimestre\programacion\zzzzz\trabajo final - programacion\librerias\utilidades.h
+
+1654043364 source:g:\otros ordenadores\mi portátil\carpeta drive\utn\1º cuatrimestre\programacion\zzzzz\trabajo final - programacion\librerias\utilidades_persistencia.c
+	<stdio.h>
+	<stdlib.h>
+	<windows.h>
+	<locale.h>
+	<string.h>
+	"./utilidades_Persistencia.h"
+
+1654043365 g:\otros ordenadores\mi portátil\carpeta drive\utn\1º cuatrimestre\programacion\zzzzz\trabajo final - programacion\librerias\utilidades_persistencia.h
+
+1654043364 g:\otros ordenadores\mi portátil\carpeta drive\utn\1º cuatrimestre\programacion\zzzzz\trabajo final - programacion\librerias\lectores.h
+	<stdio.h>
+	<stdlib.h>
+	<windows.h>
+	<locale.h>
+	<string.h>
+	"./utilidades.h"
+	"./lectores.h"
+
+1654043365 source:g:\otros ordenadores\mi portátil\carpeta drive\utn\1º cuatrimestre\programacion\zzzzz\trabajo final - programacion\librerias\lectores.c
+	<stdio.h>
+	<windows.h>
+	<locale.h>
+	<string.h>
+	"./utilidades.h"
+	"./lectores.h"
+
+1654037104 source:g:\otros ordenadores\mi portátil\carpeta drive\utn\1º cuatrimestre\programacion\zzzzz\trabajo final - programacion\librerias\lectores_persistencia.c
+	<stdio.h>
+	<stdlib.h>
+	<windows.h>
+	<locale.h>
+	<string.h>
+	"./utilidades.h"
+	"./lectores.h"
+
+1654038839 source:g:\otros ordenadores\mi portátil\carpeta drive\utn\1º cuatrimestre\programacion\zzzzz\trabajo final - programacion\librerias\libros.c
+
+1654038839 source:g:\otros ordenadores\mi portátil\carpeta drive\utn\1º cuatrimestre\programacion\zzzzz\trabajo final - programacion\librerias\libros_persistencia.c
 
