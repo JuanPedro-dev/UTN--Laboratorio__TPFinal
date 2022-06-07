@@ -265,7 +265,7 @@ void modificarLector_Persistencia(const int indice)
         gets(password);
         strcpy(aux.password, password);
 
-        printf("ID: No puede modificarlo evitar errores.\n");
+        printf("ID: No puede modificarlo para evitar errores.\n");
 
         int validos = 0;
         const int TECLA_ESC=27;
@@ -336,7 +336,60 @@ void leerFavoritos_lector_Persistencia(const int indice)
     }
 }
 
+void lector_case_Persistencia(const int option)
+{
 
+    int indice;
+    int id_user_actual;
+    stLector lector_actual;
+    char mail[45];
+    char password[15];
+
+    int flag_logIn = 0;
+    switch(option)
+    {
+    case 1:
+        printf("\t\t\t+=========================+=========================+\n");
+        printf("\t\t\t|                  REGISTRO LECTOR                  |\n");
+        printf("\t\t\t+=========================+=========================+\n\n");
+        registrarse();
+        break;
+    case 2:
+        printf("\t\t\t+=========================+=========================+\n");
+        printf("\t\t\t|                  INICIAR SESIÓN                   |\n");
+        printf("\t\t\t+=========================+=========================+\n\n");
+
+        printf("Ingrese su mail: ");
+        fflush(stdin);
+        gets(mail);
+
+        printf("Ingrese su contraseña: ");
+        fflush(stdin);
+        gets(password);
+
+        indice = validarLector(mail, password);
+        if(indice == -1)
+        {
+            printf("Error: el mail o su contraseña son incorrectas.\n");
+        }
+        printf("El usuario id actual: %d\n", indice);
+
+        system("pause");
+        break;
+
+    case 4:
+        if(flag_logIn == 0)
+        {
+            printf("Primero inicie sesión.\n");
+        } else
+        {
+            printf("                    Ver lista de libros.\n");
+            leerFavoritos_lector(indice);
+        }
+        break;
+
+    }
+}
 
 
 

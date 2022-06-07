@@ -52,3 +52,8 @@ void leerFavoritos_lector(const int indice)
 {
     leerFavoritos_lector_Persistencia(indice);
 }
+
+void lector_case(const int option)
+{
+    lector_case_Persistencia(option);
+}

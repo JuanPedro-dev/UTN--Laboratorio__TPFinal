@@ -28,3 +28,12 @@ void menuLector()
 {
     menuLector_Persistencia();
 }
+void menuAdministrador()
+{
+    menuAdministrador_Persistencia();
+}
+
+void administrador_case(const int option)
+{
+    administrador_case_Persistencia(option);
+}

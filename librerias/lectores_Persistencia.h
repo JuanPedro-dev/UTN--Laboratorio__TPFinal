@@ -21,6 +21,6 @@ void darBajaLector_Persistencia(const int indice);
 void modificarLector_Persistencia(const int indice);
 void leerFavoritos_lector_Persistencia(const int indice);
 
-
+void lector_case_Persistencia(const int option);
 
 #endif // LECTORES_PERSISTENCIA_H_INCLUDED

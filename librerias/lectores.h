@@ -23,5 +23,6 @@ int posicionLector_id(const int id);
 void darBajaLector(const int indice);
 void modificarLector(const int indice);
 void leerFavoritos_lector(const int indice);    // modificar para ver los nombres de los libros
+void lector_case(const int option);
 
 #endif // LECTORES_H_INCLUDED

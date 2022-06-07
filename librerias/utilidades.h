@@ -42,8 +42,9 @@ int menu_inicio();
 void verificar_archivos();
 
 void menuLector();
-
-
-
+void menuAdministrador();
 int validarAdministrador();
+void administrador_case(const int option);
+
+
 #endif // UTILIDADES_H_INCLUDED
