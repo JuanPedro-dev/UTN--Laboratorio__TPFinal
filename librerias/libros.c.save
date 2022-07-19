@@ -1,0 +1,32 @@
+#include <stdio.h>#include <stdlib.h>
+#include <windows.h>
+#include <locale.h>
+#include <string.h>
+#define  archivoLectores "archivoLectores.bin"
+#define  archivoLibros "archivoLibros.bin"
+
+#include "./utilidades.h"
+#include "./lectores.h"
+
+void mostrarLibros(stLector usuario)
+{
+    mostrarLibros_persistencia(usuario);
+}
+void devolverNombreLibro(char* nombre[50], int idABuscar)
+{
+    devolverNombreLibro_persistencia(nombre,idABuscar);
+}
+void crearLibros()
+{
+    crearLibros_Persistencia();
+}
+
+void guardaLibro(stLibro libro)
+{
+    guardaLibro_Persistencia(stLibro libro);
+}
+
+void creaLibro()
+{
+    creaLibro_Persistencia();
+}

@@ -11,7 +11,7 @@
 #include "./librerias/utilidades.h"
 #include "./librerias/lectores.h"
 
-void registrarLector_Persistencia(lector);
+void  registrarLector_Persistencia(lector);
 void registrarse_Persistencia();
 int validarLector_Persistencia(const char mail[], const char password[]);
 void mostrarLector_Persistencia(const stLector lector);
@@ -27,6 +27,5 @@ int validarFavorito_Persistencia(int libroFavorito, stLector lector);
 void actualizarRegistroLector_Persistencia(stLector lector, int indiceLector);
 void quitarLibro_Persistencia(int indice);
 void bajaLector_persistencia(int indice);
-int comprobarUsuarioRepetido_Persistencia(char mail[45]);
 
 #endif // LECTORES_PERSISTENCIA_H_INCLUDED

@@ -12,28 +12,26 @@
 int menu_inicio_Persistencia()
 {
     int option;
+    printf("\t\t\t+=========================+=========================+\n");
+    printf("\t\t\t|               SISTEMA DE BIBLIOTECA               |\n");
+    printf("\t\t\t+=========================+=========================+\n");
+
     do
     {
-        system("cls");
-        printf("\t\t\t+=========================+=========================+\n");
-        printf("\t\t\t|               SISTEMA DE BIBLIOTECA               |\n");
-        printf("\t\t\t+=========================+=========================+\n");
         printf(" Seleccione una opción para continuar.\n");
         printf("    1. Lector.\n");
-        printf("    2. Administrador.\n\n");
-        printf("    0. Terminar el programa\n");
+        printf("    2. Administrador.\n");
 
 
         printf("\n ELIJA UNA OPCIÓN: ");
         fflush(stdin);
         scanf("%d", &option);
-        if(option!=1 && option!=2 && option!=0)
+        if(option!=1 && option!=2)
         {
-            printf("                         >>> Error, ingrese un valor valido. <<<\n");
-            Sleep(1300);
+            printf("                         >>> Error, ingrese un valor valido. <<<\n\n");
         }
     }
-    while(option != 1 && option!=2 && option!=0);
+    while(option != 1 && option!=2);
     return option;
 }
 
@@ -77,7 +75,6 @@ int validarAdministrador_Persistencia()
 
 void menuLector_Persistencia()
 {
-    system("cls");
     printf("\t\t\t+=========================+=========================+\n");
     printf("\t\t\t|                 MENU DE LECTORES                  |\n");
     printf("\t\t\t+=========================+=========================+\n");
@@ -90,15 +87,14 @@ void menuLector_Persistencia()
     printf("    7. Desmarcar como favorito un libro. \n");
     printf("    8. Ver mis libros favoritos.         \n");
     printf("    9. Darse de baja de la aplicación.   \n\n");
-    printf("   10. Logout (Volver al menú principal). \n");
-    printf("    0. Salir del programa. \n");
+    printf("   10. Logout / Salir.                   \n");
+    printf("    0. Salir o Volver al menu principal. \n");
 
     printf("\n ELIJA UNA OPCIÓN: ");
 }
 
 void menuAdministrador_Persistencia()
 {
-    system("cls");
     printf("\t\t\t+=========================+=========================+\n");
     printf("\t\t\t|               MENU DEL ADMINISTRADOR              |\n");
     printf("\t\t\t+=========================+=========================+\n");
@@ -109,8 +105,7 @@ void menuAdministrador_Persistencia()
     printf("    5. Dar de alta un libro: \n");
     printf("    6. Modicar los atributos de un libro: \n");
     printf("    7. Dar de baja un libro: \n");
-    printf("    8. Agregar un libro: \n");
-    printf("    9. Ver lista de libros con caracteristicas: \n\n");
+    printf("    8. Agregar un libro: \n\n");
     printf("    0. Salir o Volver al menu principal.\n");
 
     printf("\n ELIJA UNA OPCIÓN: ");
@@ -123,7 +118,6 @@ void administrador_case_Persistencia(const int option)
     switch(option)
     {
     case 1:
-        system("cls");
         printf("\t\t\t+=========================+=========================+\n");
         printf("\t\t\t|                 LISTA DE LECTORES                 |\n");
         printf("\t\t\t+=========================+=========================+\n\n");
@@ -134,10 +128,7 @@ void administrador_case_Persistencia(const int option)
         system("pause");
         break;
     case 2:
-        system("cls");
-        printf("\t\t\t+=========================+=========================+\n");
-        printf("\t\t\t|                DAR BAJA A UN LECTOR               |\n");
-        printf("\t\t\t+=========================+=========================+\n\n");
+        printf("                            Dar de baja un lectores\n\n");
         printf("Ingrese el ID del lector: ");
         fflush(stdin);
         scanf("%d", &id_user);
@@ -148,15 +139,12 @@ void administrador_case_Persistencia(const int option)
         }
         else
         {
-            printf(">> No se encuentra el ID del lector.\n");
+            printf("No se encuentra el ID del lector.\n");
         }
         system("pause");
         break;
     case 3:
-        system("cls");
-        printf("\t\t\t+=========================+=========================+\n");
-        printf("\t\t\t|                  MODIFICAR LECTOR                 |\n");
-        printf("\t\t\t+=========================+=========================+\n\n");
+        printf("                            Modificar los datos de un lector \n\n");
         printf("Ingrese el ID del lector: ");
         fflush(stdin);
         scanf("%d", &id_user);
@@ -164,19 +152,16 @@ void administrador_case_Persistencia(const int option)
         if(indice!=-1)
         {
             modificarLector(indice);
-            printf(">>> Se ha modificado con éxito.\n");
         }
         else
         {
             printf("No se encuentra el ID del lector.\n");
         }
+        printf(">>> Se ha modificado con éxito.\n");
         system("pause");
         break;
     case 4:
-        system("cls");
-        printf("\t\t\t+=========================+=========================+\n");
-        printf("\t\t\t|              FAVORITOS DE UN LECTOR               |\n");
-        printf("\t\t\t+=========================+=========================+\n\n");
+        printf("                            Ver los libros favoritos de un lector\n\n");
         printf("Ingrese el ID del lector: ");
         fflush(stdin);
         scanf("%d", &id_user);
@@ -187,49 +172,33 @@ void administrador_case_Persistencia(const int option)
         }
         else
         {
-            printf(">> No se encuentra el ID del lector.\n");
+            printf("No se encuentra el ID del lector.\n");
         }
         system("pause");
         break;
+    ///////////////////////////////////////////////////////////////////////////////////////
     case 5:
-        system("cls");
-        printf("\t\t\t+=========================+=========================+\n");
-        printf("\t\t\t|                DAR ALTA A UN LIBRO                |\n");
-        printf("\t\t\t+=========================+=========================+\n\n");
-        darDeAltaLibros();
-        break;
-    case 6:
-        system("cls");
-        printf("\t\t\t+=========================+=========================+\n");
-        printf("\t\t\t|                  EDITAR UN LIBRO                  |\n");
-        printf("\t\t\t+=========================+=========================+\n\n");
-        editarLibro();
-        break;
-    case 7:
-        system("cls");
-        printf("\t\t\t+=========================+=========================+\n");
-        printf("\t\t\t|                DAR DE BAJA UN LIBRO               |\n");
-        printf("\t\t\t+=========================+=========================+\n\n");
-        borrarLibros();
-        break;
-    case 8:
-        system("cls");
-        printf("\t\t\t+=========================+=========================+\n");
-        printf("\t\t\t|                   CREAR UN LIBRO                  |\n");
-        printf("\t\t\t+=========================+=========================+\n\n");
-        crearLibros();
-        break;
-    case 9:
-        system("cls");
-        printf("\t\t\t+=========================+=========================+\n");
-        printf("\t\t\t|                 LISTA DE LIBROS                   |\n");
-        printf("\t\t\t+=========================+=========================+\n\n");
-        mostrarLibros();
-        printf("\t\t\t+=========================+=========================+\n");
-        printf("\t\t\t|               FIN LISTA DE LIBROS                 |\n");
-        printf("\t\t\t+=========================+=========================+\n\n");
+        printf("                            Dar de alta un libro\n\n");
+        printf("Ingrese el ID del libro: ");
+        fflush(stdin);
+        scanf("%d", &id_user);
+        indice = posicionLector_id(id_user); // cambiar buscar posicion que tiene un libro.
+        if(indice!=-1)
+        {
+            //funcion que modifica un libro
+        }
+        else
+        {
+            printf("No se encuentra el ID del libro.\n");
+        }
+        printf(">>> Se ha modificado con éxito.\n");
         system("pause");
         break;
+
+    case 8:
+        crearLibros();
+        br
+        ///////////////////////////////////////////////////////////////////////////////////////
     }
 }
 

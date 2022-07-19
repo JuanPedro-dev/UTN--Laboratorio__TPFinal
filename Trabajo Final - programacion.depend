@@ -133,3 +133,905 @@
 	"./librerias/utilidades.h"
 	"./librerias/lectores.h"
 
+1654638690 source:f:\utn--laboratorio__tpfinal-main\librerias\lectores.c
+	<stdio.h>
+	<windows.h>
+	<locale.h>
+	<string.h>
+	"./utilidades.h"
+	"./lectores.h"
+
+1654638690 f:\utn--laboratorio__tpfinal-main\librerias\utilidades.h
+
+1654671880 f:\utn--laboratorio__tpfinal-main\librerias\lectores.h
+	<stdio.h>
+	<stdlib.h>
+	<windows.h>
+	<locale.h>
+	<string.h>
+	"./utilidades.h"
+	"./lectores.h"
+
+1654687912 source:f:\utn--laboratorio__tpfinal-main\librerias\lectores_persistencia.c
+	<stdio.h>
+	<stdlib.h>
+	<windows.h>
+	<locale.h>
+	<string.h>
+	"./utilidades.h"
+	"./lectores.h"
+	"./libros.h"
+
+1654638690 source:f:\utn--laboratorio__tpfinal-main\librerias\utilidades.c
+	<stdio.h>
+	<stdlib.h>
+	<windows.h>
+	<locale.h>
+	<string.h>
+	"./utilidades.h"
+	"./lectores.h"
+
+1654681780 source:f:\utn--laboratorio__tpfinal-main\librerias\utilidades_persistencia.c
+	<stdio.h>
+	<stdlib.h>
+	<windows.h>
+	<locale.h>
+	<string.h>
+	"./utilidades_Persistencia.h"
+
+1654638690 f:\utn--laboratorio__tpfinal-main\librerias\utilidades_persistencia.h
+
+1654638690 source:f:\utn--laboratorio__tpfinal-main\main.c
+	<stdio.h>
+	<stdlib.h>
+	<windows.h>
+	<locale.h>
+	<string.h>
+	"./librerias/utilidades.h"
+	"./librerias/lectores.h"
+
+1654687336 source:f:\utn--laboratorio__tpfinal-main\librerias\libros.c
+	<stdio.h>
+	<stdlib.h>
+	<windows.h>
+	<locale.h>
+	<string.h>
+	"./utilidades.h"
+	"./lectores.h"
+	"./libros_Persistencia.h"
+
+1654687650 source:f:\utn--laboratorio__tpfinal-main\librerias\libros_persistencia.c
+	<stdio.h>
+	<stdlib.h>
+	<windows.h>
+	<locale.h>
+	<string.h>
+	"./utilidades.h"
+	"./lectores.h"
+	"./libros.h"
+
+1654687336 f:\utn--laboratorio__tpfinal-main\librerias\libros.h
+
+1654687336 f:\utn--laboratorio__tpfinal-main\librerias\libros_persistencia.h
+	"./utilidades.h"
+
+1654822274 source:g:\otros ordenadores\mi portátil\carpeta drive\utn\1º cuatrimestre\programacion\utn--laboratorio__tpfinal-main_08-06-22\utn--laboratorio__tpfinal-main\librerias\lectores.c
+	<stdio.h>
+	<windows.h>
+	<locale.h>
+	<string.h>
+	"./utilidades.h"
+	"./lectores.h"
+
+1654638690 g:\otros ordenadores\mi portátil\carpeta drive\utn\1º cuatrimestre\programacion\utn--laboratorio__tpfinal-main_08-06-22\utn--laboratorio__tpfinal-main\librerias\utilidades.h
+
+1654822399 g:\otros ordenadores\mi portátil\carpeta drive\utn\1º cuatrimestre\programacion\utn--laboratorio__tpfinal-main_08-06-22\utn--laboratorio__tpfinal-main\librerias\lectores.h
+	<stdio.h>
+	<stdlib.h>
+	<windows.h>
+	<locale.h>
+	<string.h>
+	"./utilidades.h"
+	"./lectores.h"
+
+1654823390 source:g:\otros ordenadores\mi portátil\carpeta drive\utn\1º cuatrimestre\programacion\utn--laboratorio__tpfinal-main_08-06-22\utn--laboratorio__tpfinal-main\librerias\lectores_persistencia.c
+	<stdio.h>
+	<stdlib.h>
+	<windows.h>
+	<locale.h>
+	<string.h>
+	"./utilidades.h"
+	"./lectores.h"
+	"./libros.h"
+
+1654687336 g:\otros ordenadores\mi portátil\carpeta drive\utn\1º cuatrimestre\programacion\utn--laboratorio__tpfinal-main_08-06-22\utn--laboratorio__tpfinal-main\librerias\libros.h
+
+1654687336 source:g:\otros ordenadores\mi portátil\carpeta drive\utn\1º cuatrimestre\programacion\utn--laboratorio__tpfinal-main_08-06-22\utn--laboratorio__tpfinal-main\librerias\libros.c
+	<stdio.h>
+	<stdlib.h>
+	<windows.h>
+	<locale.h>
+	<string.h>
+	"./utilidades.h"
+	"./lectores.h"
+	"./libros_Persistencia.h"
+
+1654687336 g:\otros ordenadores\mi portátil\carpeta drive\utn\1º cuatrimestre\programacion\utn--laboratorio__tpfinal-main_08-06-22\utn--laboratorio__tpfinal-main\librerias\libros_persistencia.h
+	"./utilidades.h"
+
+1654687650 source:g:\otros ordenadores\mi portátil\carpeta drive\utn\1º cuatrimestre\programacion\utn--laboratorio__tpfinal-main_08-06-22\utn--laboratorio__tpfinal-main\librerias\libros_persistencia.c
+	<stdio.h>
+	<stdlib.h>
+	<windows.h>
+	<locale.h>
+	<string.h>
+	"./utilidades.h"
+	"./lectores.h"
+	"./libros.h"
+
+1654638690 source:g:\otros ordenadores\mi portátil\carpeta drive\utn\1º cuatrimestre\programacion\utn--laboratorio__tpfinal-main_08-06-22\utn--laboratorio__tpfinal-main\librerias\utilidades.c
+	<stdio.h>
+	<stdlib.h>
+	<windows.h>
+	<locale.h>
+	<string.h>
+	"./utilidades.h"
+	"./lectores.h"
+
+1654821289 source:g:\otros ordenadores\mi portátil\carpeta drive\utn\1º cuatrimestre\programacion\utn--laboratorio__tpfinal-main_08-06-22\utn--laboratorio__tpfinal-main\librerias\utilidades_persistencia.c
+	<stdio.h>
+	<stdlib.h>
+	<windows.h>
+	<locale.h>
+	<string.h>
+	"./utilidades_Persistencia.h"
+
+1654638690 g:\otros ordenadores\mi portátil\carpeta drive\utn\1º cuatrimestre\programacion\utn--laboratorio__tpfinal-main_08-06-22\utn--laboratorio__tpfinal-main\librerias\utilidades_persistencia.h
+
+1654822745 source:g:\otros ordenadores\mi portátil\carpeta drive\utn\1º cuatrimestre\programacion\utn--laboratorio__tpfinal-main_08-06-22\utn--laboratorio__tpfinal-main\main.c
+	<stdio.h>
+	<stdlib.h>
+	<windows.h>
+	<locale.h>
+	<string.h>
+	"./librerias/utilidades.h"
+	"./librerias/lectores.h"
+
+1655475611 source:c:\users\equipo\desktop\carpeta drive\utn\1º cuatrimestre\programacion\tp lab 09-06-22\librerias\lectores.c
+	<stdio.h>
+	<windows.h>
+	<locale.h>
+	<string.h>
+	"./utilidades.h"
+	"./lectores.h"
+
+1654638690 c:\users\equipo\desktop\carpeta drive\utn\1º cuatrimestre\programacion\tp lab 09-06-22\librerias\utilidades.h
+
+1655474010 c:\users\equipo\desktop\carpeta drive\utn\1º cuatrimestre\programacion\tp lab 09-06-22\librerias\lectores.h
+	<stdio.h>
+	<stdlib.h>
+	<windows.h>
+	<locale.h>
+	<string.h>
+	"./utilidades.h"
+	"./lectores.h"
+
+1655497086 source:c:\users\equipo\desktop\carpeta drive\utn\1º cuatrimestre\programacion\tp lab 09-06-22\librerias\libros.c
+	<stdio.h>
+	<stdlib.h>
+	<windows.h>
+	<locale.h>
+	<string.h>
+	"./utilidades.h"
+	"./lectores.h"
+	"./libros_Persistencia.h"
+
+1655496934 c:\users\equipo\desktop\carpeta drive\utn\1º cuatrimestre\programacion\tp lab 09-06-22\librerias\libros_persistencia.h
+	"./utilidades.h"
+
+1655496934 source:c:\users\equipo\desktop\carpeta drive\utn\1º cuatrimestre\programacion\tp lab 09-06-22\librerias\libros_persistencia.c
+	<stdio.h>
+	<stdlib.h>
+	<windows.h>
+	<locale.h>
+	<string.h>
+	"./utilidades.h"
+	"./lectores.h"
+	"./libros.h"
+
+1655497022 c:\users\equipo\desktop\carpeta drive\utn\1º cuatrimestre\programacion\tp lab 09-06-22\librerias\libros.h
+
+1654638690 source:c:\users\equipo\desktop\carpeta drive\utn\1º cuatrimestre\programacion\tp lab 09-06-22\librerias\utilidades.c
+	<stdio.h>
+	<stdlib.h>
+	<windows.h>
+	<locale.h>
+	<string.h>
+	"./utilidades.h"
+	"./lectores.h"
+
+1655496944 source:c:\users\equipo\desktop\carpeta drive\utn\1º cuatrimestre\programacion\tp lab 09-06-22\main.c
+	<stdio.h>
+	<stdlib.h>
+	<windows.h>
+	<locale.h>
+	<string.h>
+	"./librerias/utilidades.h"
+	"./librerias/lectores.h"
+
+1655497504 source:c:\users\equipo\desktop\carpeta drive\utn\1º cuatrimestre\programacion\tp lab 09-06-22\librerias\lectores_persistencia.c
+	<stdio.h>
+	<stdlib.h>
+	<windows.h>
+	<locale.h>
+	<string.h>
+	"./utilidades.h"
+	"./lectores.h"
+	"./libros.h"
+
+1655496581 source:c:\users\equipo\desktop\carpeta drive\utn\1º cuatrimestre\programacion\tp lab 09-06-22\librerias\utilidades_persistencia.c
+	<stdio.h>
+	<stdlib.h>
+	<windows.h>
+	<locale.h>
+	<string.h>
+	"./utilidades_Persistencia.h"
+
+1654638690 c:\users\equipo\desktop\carpeta drive\utn\1º cuatrimestre\programacion\tp lab 09-06-22\librerias\utilidades_persistencia.h
+
+1655475612 source:f:\tp lab 17-06-22 version 2\tp lab 09-06-22\librerias\lectores.c
+	<stdio.h>
+	<windows.h>
+	<locale.h>
+	<string.h>
+	"./utilidades.h"
+	"./lectores.h"
+
+1654638690 f:\tp lab 17-06-22 version 2\tp lab 09-06-22\librerias\utilidades.h
+
+1655474012 f:\tp lab 17-06-22 version 2\tp lab 09-06-22\librerias\lectores.h
+	<stdio.h>
+	<stdlib.h>
+	<windows.h>
+	<locale.h>
+	<string.h>
+	"./utilidades.h"
+	"./lectores.h"
+
+1655509004 source:f:\tp lab 17-06-22 version 2\tp lab 09-06-22\librerias\lectores_persistencia.c
+	<stdio.h>
+	<stdlib.h>
+	<windows.h>
+	<locale.h>
+	<string.h>
+	"./utilidades.h"
+	"./lectores.h"
+	"./libros.h"
+
+1655497022 f:\tp lab 17-06-22 version 2\tp lab 09-06-22\librerias\libros.h
+
+1655497086 source:f:\tp lab 17-06-22 version 2\tp lab 09-06-22\librerias\libros.c
+	<stdio.h>
+	<stdlib.h>
+	<windows.h>
+	<locale.h>
+	<string.h>
+	"./utilidades.h"
+	"./lectores.h"
+	"./libros_Persistencia.h"
+
+1655496934 f:\tp lab 17-06-22 version 2\tp lab 09-06-22\librerias\libros_persistencia.h
+	"./utilidades.h"
+
+1655508484 source:f:\tp lab 17-06-22 version 2\tp lab 09-06-22\librerias\libros_persistencia.c
+	<stdio.h>
+	<stdlib.h>
+	<windows.h>
+	<locale.h>
+	<string.h>
+	"./utilidades.h"
+	"./lectores.h"
+	"./libros.h"
+
+1654638690 source:f:\tp lab 17-06-22 version 2\tp lab 09-06-22\librerias\utilidades.c
+	<stdio.h>
+	<stdlib.h>
+	<windows.h>
+	<locale.h>
+	<string.h>
+	"./utilidades.h"
+	"./lectores.h"
+
+1655496582 source:f:\tp lab 17-06-22 version 2\tp lab 09-06-22\librerias\utilidades_persistencia.c
+	<stdio.h>
+	<stdlib.h>
+	<windows.h>
+	<locale.h>
+	<string.h>
+	"./utilidades_Persistencia.h"
+
+1654638690 f:\tp lab 17-06-22 version 2\tp lab 09-06-22\librerias\utilidades_persistencia.h
+
+1655496946 source:f:\tp lab 17-06-22 version 2\tp lab 09-06-22\main.c
+	<stdio.h>
+	<stdlib.h>
+	<windows.h>
+	<locale.h>
+	<string.h>
+	"./librerias/utilidades.h"
+	"./librerias/lectores.h"
+
+1655563370 source:f:\utn2022\programacion1\c\tp_final_prog_1\tp lab 17-06-22-version4\librerias\lectores.c
+	<stdio.h>
+	<windows.h>
+	<locale.h>
+	<string.h>
+	"./utilidades.h"
+	"./lectores.h"
+
+1654638690 f:\utn2022\programacion1\c\tp_final_prog_1\tp lab 17-06-22-version4\librerias\utilidades.h
+
+1655563370 f:\utn2022\programacion1\c\tp_final_prog_1\tp lab 17-06-22-version4\librerias\lectores.h
+	<stdio.h>
+	<stdlib.h>
+	<windows.h>
+	<locale.h>
+	<string.h>
+	"./utilidades.h"
+	"./lectores.h"
+
+1655638058 source:f:\utn2022\programacion1\c\tp_final_prog_1\tp lab 17-06-22-version4\librerias\lectores_persistencia.c
+	<stdio.h>
+	<stdlib.h>
+	<windows.h>
+	<locale.h>
+	<string.h>
+	"./utilidades.h"
+	"./lectores.h"
+	"./libros.h"
+
+1655497022 f:\utn2022\programacion1\c\tp_final_prog_1\tp lab 17-06-22-version4\librerias\libros.h
+
+1655497086 source:f:\utn2022\programacion1\c\tp_final_prog_1\tp lab 17-06-22-version4\librerias\libros.c
+	<stdio.h>
+	<stdlib.h>
+	<windows.h>
+	<locale.h>
+	<string.h>
+	"./utilidades.h"
+	"./lectores.h"
+	"./libros_Persistencia.h"
+
+1655496934 f:\utn2022\programacion1\c\tp_final_prog_1\tp lab 17-06-22-version4\librerias\libros_persistencia.h
+	"./utilidades.h"
+
+1655565680 source:f:\utn2022\programacion1\c\tp_final_prog_1\tp lab 17-06-22-version4\librerias\libros_persistencia.c
+	<stdio.h>
+	<stdlib.h>
+	<windows.h>
+	<locale.h>
+	<string.h>
+	"./utilidades.h"
+	"./lectores.h"
+	"./libros.h"
+
+1654638690 source:f:\utn2022\programacion1\c\tp_final_prog_1\tp lab 17-06-22-version4\librerias\utilidades.c
+	<stdio.h>
+	<stdlib.h>
+	<windows.h>
+	<locale.h>
+	<string.h>
+	"./utilidades.h"
+	"./lectores.h"
+
+1655496582 source:f:\utn2022\programacion1\c\tp_final_prog_1\tp lab 17-06-22-version4\librerias\utilidades_persistencia.c
+	<stdio.h>
+	<stdlib.h>
+	<windows.h>
+	<locale.h>
+	<string.h>
+	"./utilidades_Persistencia.h"
+
+1654638690 f:\utn2022\programacion1\c\tp_final_prog_1\tp lab 17-06-22-version4\librerias\utilidades_persistencia.h
+
+1655549590 source:f:\utn2022\programacion1\c\tp_final_prog_1\tp lab 17-06-22-version4\main.c
+	<stdio.h>
+	<stdlib.h>
+	<windows.h>
+	<locale.h>
+	<string.h>
+	"./librerias/utilidades.h"
+	"./librerias/lectores.h"
+
+1655651418 source:c:\users\equipo\downloads\tp lab 19-06-22\librerias\lectores.c
+	<stdio.h>
+	<windows.h>
+	<locale.h>
+	<string.h>
+	"./utilidades.h"
+	"./lectores.h"
+
+1654638690 c:\users\equipo\downloads\tp lab 19-06-22\librerias\utilidades.h
+
+1655651419 c:\users\equipo\downloads\tp lab 19-06-22\librerias\lectores.h
+	<stdio.h>
+	<stdlib.h>
+	<windows.h>
+	<locale.h>
+	<string.h>
+	"./utilidades.h"
+	"./lectores.h"
+
+1655651418 source:c:\users\equipo\downloads\tp lab 19-06-22\librerias\lectores_persistencia.c
+	<stdio.h>
+	<stdlib.h>
+	<windows.h>
+	<locale.h>
+	<string.h>
+	"./utilidades.h"
+	"./lectores.h"
+	"./libros.h"
+
+1655497022 c:\users\equipo\downloads\tp lab 19-06-22\librerias\libros.h
+
+1655497086 source:c:\users\equipo\downloads\tp lab 19-06-22\librerias\libros.c
+	<stdio.h>
+	<stdlib.h>
+	<windows.h>
+	<locale.h>
+	<string.h>
+	"./utilidades.h"
+	"./lectores.h"
+	"./libros_Persistencia.h"
+
+1655496934 c:\users\equipo\downloads\tp lab 19-06-22\librerias\libros_persistencia.h
+	"./utilidades.h"
+
+1655565680 source:c:\users\equipo\downloads\tp lab 19-06-22\librerias\libros_persistencia.c
+	<stdio.h>
+	<stdlib.h>
+	<windows.h>
+	<locale.h>
+	<string.h>
+	"./utilidades.h"
+	"./lectores.h"
+	"./libros.h"
+
+1654638690 source:c:\users\equipo\downloads\tp lab 19-06-22\librerias\utilidades.c
+	<stdio.h>
+	<stdlib.h>
+	<windows.h>
+	<locale.h>
+	<string.h>
+	"./utilidades.h"
+	"./lectores.h"
+
+1655496582 source:c:\users\equipo\downloads\tp lab 19-06-22\librerias\utilidades_persistencia.c
+	<stdio.h>
+	<stdlib.h>
+	<windows.h>
+	<locale.h>
+	<string.h>
+	"./utilidades_Persistencia.h"
+
+1654638690 c:\users\equipo\downloads\tp lab 19-06-22\librerias\utilidades_persistencia.h
+
+1655549590 source:c:\users\equipo\downloads\tp lab 19-06-22\main.c
+	<stdio.h>
+	<stdlib.h>
+	<windows.h>
+	<locale.h>
+	<string.h>
+	"./librerias/utilidades.h"
+	"./librerias/lectores.h"
+
+1655655428 source:f:\utn2022\programacion1\c\tp_final_prog_1\tp lab 19-06-22\librerias\lectores.c
+	<stdio.h>
+	<windows.h>
+	<locale.h>
+	<string.h>
+	"./utilidades.h"
+	"./lectores.h"
+
+1654638690 f:\utn2022\programacion1\c\tp_final_prog_1\tp lab 19-06-22\librerias\utilidades.h
+
+1655655418 f:\utn2022\programacion1\c\tp_final_prog_1\tp lab 19-06-22\librerias\lectores.h
+	<stdio.h>
+	<stdlib.h>
+	<windows.h>
+	<locale.h>
+	<string.h>
+	"./utilidades.h"
+	"./lectores.h"
+
+1655656650 source:f:\utn2022\programacion1\c\tp_final_prog_1\tp lab 19-06-22\librerias\lectores_persistencia.c
+	<stdio.h>
+	<stdlib.h>
+	<windows.h>
+	<locale.h>
+	<string.h>
+	"./utilidades.h"
+	"./lectores.h"
+	"./libros.h"
+
+1655652726 f:\utn2022\programacion1\c\tp_final_prog_1\tp lab 19-06-22\librerias\libros.h
+
+1655652726 source:f:\utn2022\programacion1\c\tp_final_prog_1\tp lab 19-06-22\librerias\libros.c
+	<stdio.h>
+	<stdlib.h>
+	<windows.h>
+	<locale.h>
+	<string.h>
+	"./utilidades.h"
+	"./lectores.h"
+	"./libros_Persistencia.h"
+
+1655652726 f:\utn2022\programacion1\c\tp_final_prog_1\tp lab 19-06-22\librerias\libros_persistencia.h
+	"./utilidades.h"
+
+1655652866 source:f:\utn2022\programacion1\c\tp_final_prog_1\tp lab 19-06-22\librerias\libros_persistencia.c
+	<stdio.h>
+	<stdlib.h>
+	<windows.h>
+	<locale.h>
+	<string.h>
+	"./utilidades.h"
+	"./lectores.h"
+	"./libros.h"
+
+1654638690 source:f:\utn2022\programacion1\c\tp_final_prog_1\tp lab 19-06-22\librerias\utilidades.c
+	<stdio.h>
+	<stdlib.h>
+	<windows.h>
+	<locale.h>
+	<string.h>
+	"./utilidades.h"
+	"./lectores.h"
+
+1655652758 source:f:\utn2022\programacion1\c\tp_final_prog_1\tp lab 19-06-22\librerias\utilidades_persistencia.c
+	<stdio.h>
+	<stdlib.h>
+	<windows.h>
+	<locale.h>
+	<string.h>
+	"./utilidades_Persistencia.h"
+
+1654638690 f:\utn2022\programacion1\c\tp_final_prog_1\tp lab 19-06-22\librerias\utilidades_persistencia.h
+
+1655549590 source:f:\utn2022\programacion1\c\tp_final_prog_1\tp lab 19-06-22\main.c
+	<stdio.h>
+	<stdlib.h>
+	<windows.h>
+	<locale.h>
+	<string.h>
+	"./librerias/utilidades.h"
+	"./librerias/lectores.h"
+
+1655663943 source:c:\users\equipo\downloads\tp lab 19-06-22-version-8\tp lab 19-06-22\librerias\lectores.c
+	<stdio.h>
+	<windows.h>
+	<locale.h>
+	<string.h>
+	"./utilidades.h"
+	"./lectores.h"
+
+1654638690 c:\users\equipo\downloads\tp lab 19-06-22-version-8\tp lab 19-06-22\librerias\utilidades.h
+
+1655663873 c:\users\equipo\downloads\tp lab 19-06-22-version-8\tp lab 19-06-22\librerias\lectores.h
+	<stdio.h>
+	<stdlib.h>
+	<windows.h>
+	<locale.h>
+	<string.h>
+	"./utilidades.h"
+	"./lectores.h"
+
+1655666312 source:c:\users\equipo\downloads\tp lab 19-06-22-version-8\tp lab 19-06-22\librerias\lectores_persistencia.c
+	<stdio.h>
+	<stdlib.h>
+	<windows.h>
+	<locale.h>
+	<string.h>
+	"./utilidades.h"
+	"./lectores.h"
+	"./libros.h"
+
+1655665362 c:\users\equipo\downloads\tp lab 19-06-22-version-8\tp lab 19-06-22\librerias\libros.h
+
+1655665362 source:c:\users\equipo\downloads\tp lab 19-06-22-version-8\tp lab 19-06-22\librerias\libros.c
+	<stdio.h>
+	<stdlib.h>
+	<windows.h>
+	<locale.h>
+	<string.h>
+	"./utilidades.h"
+	"./lectores.h"
+	"./libros_Persistencia.h"
+
+1655665362 c:\users\equipo\downloads\tp lab 19-06-22-version-8\tp lab 19-06-22\librerias\libros_persistencia.h
+	"./utilidades.h"
+
+1654638690 source:c:\users\equipo\downloads\tp lab 19-06-22-version-8\tp lab 19-06-22\librerias\utilidades.c
+	<stdio.h>
+	<stdlib.h>
+	<windows.h>
+	<locale.h>
+	<string.h>
+	"./utilidades.h"
+	"./lectores.h"
+
+1655663729 source:c:\users\equipo\downloads\tp lab 19-06-22-version-8\tp lab 19-06-22\main.c
+	<stdio.h>
+	<stdlib.h>
+	<windows.h>
+	<locale.h>
+	<string.h>
+	"./librerias/utilidades.h"
+	"./librerias/lectores.h"
+
+1655665362 source:c:\users\equipo\downloads\tp lab 19-06-22-version-8\tp lab 19-06-22\librerias\libros_persistencia.c
+	<stdio.h>
+	<stdlib.h>
+	<windows.h>
+	<locale.h>
+	<string.h>
+	"./utilidades.h"
+	"./lectores.h"
+	"./libros.h"
+
+1655661969 source:c:\users\equipo\downloads\tp lab 19-06-22-version-8\tp lab 19-06-22\librerias\utilidades_persistencia.c
+	<stdio.h>
+	<stdlib.h>
+	<windows.h>
+	<locale.h>
+	<string.h>
+	"./utilidades_Persistencia.h"
+
+1654638690 c:\users\equipo\downloads\tp lab 19-06-22-version-8\tp lab 19-06-22\librerias\utilidades_persistencia.h
+
+1655663944 source:f:\utn2022\programacion1\c\tp_final_prog_1\definitivo\tp lab 19-06-22 final\tp lab 19-06-22\librerias\lectores.c
+	<stdio.h>
+	<windows.h>
+	<locale.h>
+	<string.h>
+	"./utilidades.h"
+	"./lectores.h"
+
+1654638690 f:\utn2022\programacion1\c\tp_final_prog_1\definitivo\tp lab 19-06-22 final\tp lab 19-06-22\librerias\utilidades.h
+
+1655663874 f:\utn2022\programacion1\c\tp_final_prog_1\definitivo\tp lab 19-06-22 final\tp lab 19-06-22\librerias\lectores.h
+	<stdio.h>
+	<stdlib.h>
+	<windows.h>
+	<locale.h>
+	<string.h>
+	"./utilidades.h"
+	"./lectores.h"
+
+1655666314 source:f:\utn2022\programacion1\c\tp_final_prog_1\definitivo\tp lab 19-06-22 final\tp lab 19-06-22\librerias\lectores_persistencia.c
+	<stdio.h>
+	<stdlib.h>
+	<windows.h>
+	<locale.h>
+	<string.h>
+	"./utilidades.h"
+	"./lectores.h"
+	"./libros.h"
+
+1655665364 f:\utn2022\programacion1\c\tp_final_prog_1\definitivo\tp lab 19-06-22 final\tp lab 19-06-22\librerias\libros.h
+
+1655665364 source:f:\utn2022\programacion1\c\tp_final_prog_1\definitivo\tp lab 19-06-22 final\tp lab 19-06-22\librerias\libros.c
+	<stdio.h>
+	<stdlib.h>
+	<windows.h>
+	<locale.h>
+	<string.h>
+	"./utilidades.h"
+	"./lectores.h"
+	"./libros_Persistencia.h"
+
+1655665364 f:\utn2022\programacion1\c\tp_final_prog_1\definitivo\tp lab 19-06-22 final\tp lab 19-06-22\librerias\libros_persistencia.h
+	"./utilidades.h"
+
+1655668142 source:f:\utn2022\programacion1\c\tp_final_prog_1\definitivo\tp lab 19-06-22 final\tp lab 19-06-22\librerias\libros_persistencia.c
+	<stdio.h>
+	<stdlib.h>
+	<windows.h>
+	<locale.h>
+	<string.h>
+	"./utilidades.h"
+	"./lectores.h"
+	"./libros.h"
+
+1654638690 source:f:\utn2022\programacion1\c\tp_final_prog_1\definitivo\tp lab 19-06-22 final\tp lab 19-06-22\librerias\utilidades.c
+	<stdio.h>
+	<stdlib.h>
+	<windows.h>
+	<locale.h>
+	<string.h>
+	"./utilidades.h"
+	"./lectores.h"
+
+1655661970 source:f:\utn2022\programacion1\c\tp_final_prog_1\definitivo\tp lab 19-06-22 final\tp lab 19-06-22\librerias\utilidades_persistencia.c
+	<stdio.h>
+	<stdlib.h>
+	<windows.h>
+	<locale.h>
+	<string.h>
+	"./utilidades_Persistencia.h"
+
+1654638690 f:\utn2022\programacion1\c\tp_final_prog_1\definitivo\tp lab 19-06-22 final\tp lab 19-06-22\librerias\utilidades_persistencia.h
+
+1655663730 source:f:\utn2022\programacion1\c\tp_final_prog_1\definitivo\tp lab 19-06-22 final\tp lab 19-06-22\main.c
+	<stdio.h>
+	<stdlib.h>
+	<windows.h>
+	<locale.h>
+	<string.h>
+	"./librerias/utilidades.h"
+	"./librerias/lectores.h"
+
+1655681768 source:f:\utn2022\programacion1\c\tp_final_prog_1\definitivo\librerias\lectores.c
+	<stdio.h>
+	<windows.h>
+	<locale.h>
+	<string.h>
+	"./utilidades.h"
+	"./lectores.h"
+
+1654638690 f:\utn2022\programacion1\c\tp_final_prog_1\definitivo\librerias\utilidades.h
+
+1655681768 f:\utn2022\programacion1\c\tp_final_prog_1\definitivo\librerias\lectores.h
+	<stdio.h>
+	<stdlib.h>
+	<windows.h>
+	<locale.h>
+	<string.h>
+	"./utilidades.h"
+	"./lectores.h"
+
+1655851256 source:f:\utn2022\programacion1\c\tp_final_prog_1\definitivo\librerias\lectores_persistencia.c
+	<stdio.h>
+	<stdlib.h>
+	<windows.h>
+	<locale.h>
+	<string.h>
+	"./utilidades.h"
+	"./lectores.h"
+	"./libros.h"
+
+1655665364 f:\utn2022\programacion1\c\tp_final_prog_1\definitivo\librerias\libros.h
+
+1655665364 source:f:\utn2022\programacion1\c\tp_final_prog_1\definitivo\librerias\libros.c
+	<stdio.h>
+	<stdlib.h>
+	<windows.h>
+	<locale.h>
+	<string.h>
+	"./utilidades.h"
+	"./lectores.h"
+	"./libros_Persistencia.h"
+
+1655665364 f:\utn2022\programacion1\c\tp_final_prog_1\definitivo\librerias\libros_persistencia.h
+	"./utilidades.h"
+
+1655686782 source:f:\utn2022\programacion1\c\tp_final_prog_1\definitivo\librerias\libros_persistencia.c
+	<stdio.h>
+	<stdlib.h>
+	<windows.h>
+	<locale.h>
+	<string.h>
+	"./utilidades.h"
+	"./lectores.h"
+	"./libros.h"
+
+1654638690 source:f:\utn2022\programacion1\c\tp_final_prog_1\definitivo\librerias\utilidades.c
+	<stdio.h>
+	<stdlib.h>
+	<windows.h>
+	<locale.h>
+	<string.h>
+	"./utilidades.h"
+	"./lectores.h"
+
+1655661970 source:f:\utn2022\programacion1\c\tp_final_prog_1\definitivo\librerias\utilidades_persistencia.c
+	<stdio.h>
+	<stdlib.h>
+	<windows.h>
+	<locale.h>
+	<string.h>
+	"./utilidades_Persistencia.h"
+
+1654638690 f:\utn2022\programacion1\c\tp_final_prog_1\definitivo\librerias\utilidades_persistencia.h
+
+1655663730 source:f:\utn2022\programacion1\c\tp_final_prog_1\definitivo\main.c
+	<stdio.h>
+	<stdlib.h>
+	<windows.h>
+	<locale.h>
+	<string.h>
+	"./librerias/utilidades.h"
+	"./librerias/lectores.h"
+
+1655681768 source:c:\users\equipo\downloads\tp final lab definitivo2\librerias\lectores.c
+	<stdio.h>
+	<windows.h>
+	<locale.h>
+	<string.h>
+	"./utilidades.h"
+	"./lectores.h"
+
+1654638690 c:\users\equipo\downloads\tp final lab definitivo2\librerias\utilidades.h
+
+1655681768 c:\users\equipo\downloads\tp final lab definitivo2\librerias\lectores.h
+	<stdio.h>
+	<stdlib.h>
+	<windows.h>
+	<locale.h>
+	<string.h>
+	"./utilidades.h"
+	"./lectores.h"
+
+1655851402 source:c:\users\equipo\downloads\tp final lab definitivo2\librerias\lectores_persistencia.c
+	<stdio.h>
+	<stdlib.h>
+	<windows.h>
+	<locale.h>
+	<string.h>
+	"./utilidades.h"
+	"./lectores.h"
+	"./libros.h"
+
+1655665364 c:\users\equipo\downloads\tp final lab definitivo2\librerias\libros.h
+
+1655665364 source:c:\users\equipo\downloads\tp final lab definitivo2\librerias\libros.c
+	<stdio.h>
+	<stdlib.h>
+	<windows.h>
+	<locale.h>
+	<string.h>
+	"./utilidades.h"
+	"./lectores.h"
+	"./libros_Persistencia.h"
+
+1655665364 c:\users\equipo\downloads\tp final lab definitivo2\librerias\libros_persistencia.h
+	"./utilidades.h"
+
+1655686782 source:c:\users\equipo\downloads\tp final lab definitivo2\librerias\libros_persistencia.c
+	<stdio.h>
+	<stdlib.h>
+	<windows.h>
+	<locale.h>
+	<string.h>
+	"./utilidades.h"
+	"./lectores.h"
+	"./libros.h"
+
+1654638690 source:c:\users\equipo\downloads\tp final lab definitivo2\librerias\utilidades.c
+	<stdio.h>
+	<stdlib.h>
+	<windows.h>
+	<locale.h>
+	<string.h>
+	"./utilidades.h"
+	"./lectores.h"
+
+1655852495 source:c:\users\equipo\downloads\tp final lab definitivo2\librerias\utilidades_persistencia.c
+	<stdio.h>
+	<stdlib.h>
+	<windows.h>
+	<locale.h>
+	<string.h>
+	"./utilidades_Persistencia.h"
+
+1654638690 c:\users\equipo\downloads\tp final lab definitivo2\librerias\utilidades_persistencia.h
+
+1655663730 source:c:\users\equipo\downloads\tp final lab definitivo2\main.c
+	<stdio.h>
+	<stdlib.h>
+	<windows.h>
+	<locale.h>
+	<string.h>
+	"./librerias/utilidades.h"
+	"./librerias/lectores.h"
+

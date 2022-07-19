@@ -84,11 +84,3 @@ void quitarLibro(int indice)
 }
 
 void bajaLector(int indice)
-{
-    bajaLector_persistencia(indice);
-}
-
-int comprobarUsuarioRepetido(char mail[45])
-{
-    comprobarUsuarioRepetido_Persistencia(mail[45]);
-}

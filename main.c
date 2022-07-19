@@ -9,40 +9,53 @@
 #include "./librerias/utilidades.h"
 #include "./librerias/lectores.h"
 
+
+
 int main()
 {
     setlocale(LC_ALL, "");
     system("color 3e");
     char option = 'n';
     verificar_archivos();
-//
-//    mostrarArchivo_Lectores();
 
-    // >>>> Repito el programa hasta que decida salir <<<<
     while (option !='s' && option!='S')
     {
         system("cls");
         int usuario = menu_inicio();
-        if(usuario == 1)
+        switch(usuario)
         {
-                                            // >>>> Sistema lector <<<<
-            stLector Lector_actual;
-            char user_actual[30];
-            char user_password;
+        case 0:
+            option = 'S';
+            break;
+        case 1:         // >>>> Sistema lector <<<<
+            printf("");
+            int indice = -1;
             int option_lector;
-            menuLector();
-            fflush(stdin);
-            scanf("%d", &option_lector);
-            lector_case(option_lector);
-        }
-        else
-        {
-            printf("\t\t\t+=========================+=========================+\n");
-            printf("\t\t\t|               MENU DEL ADMINISTRADOR              |\n");
-            printf("\t\t\t+=========================+=========================+\n");
+            do
+            {
+                stLector lector_actual;
+                menuLector();
+                fflush(stdin);
+                scanf("%d", &option_lector);
+                lector_case(option_lector, &indice, &lector_actual);
+
+                if (option_lector==0)
+                {
+                    option = 's';
+                }
+            }
+            while(option_lector !=10 && option_lector !=0);
+            break;
+
+        case 2:         // >>>> Sistema Administrador <<<<
+            printf("");
             int reintentarAdministrador = 's';
             while (reintentarAdministrador == 's' || reintentarAdministrador == 'S')
             {
+                system("cls");
+                printf("\t\t\t+=========================+=========================+\n");
+                printf("\t\t\t|               MENU DEL ADMINISTRADOR              |\n");
+                printf("\t\t\t+=========================+=========================+\n");
                 printf("Iniciar sesión: \n\n");
                 if(validarAdministrador() == 1) // Todo correcto esta dentro del administrador
                 {
@@ -52,22 +65,22 @@ int main()
                         menuAdministrador();
                         fflush(stdin);
                         scanf("%d", &option);
+                        system("cls");
                         administrador_case(option);
                         reintentarAdministrador = 'n';
                     }
                 }
                 else
                 {
+                    system("cls");
                     printf(">>                          Ha ingresado un usuario o contraseña incorrecta.\n");
                     printf("¿Desea reintentar? s/n. ");
                     fflush(stdin);
                     scanf("%c", &reintentarAdministrador);
                 }
             }
+            break;
         }
-        printf("¿Desea salir? s/n. ");
-        fflush(stdin);
-        scanf("%c", &option);
     }
 
     printf("\n\n>>>                         Fin programa!\n");

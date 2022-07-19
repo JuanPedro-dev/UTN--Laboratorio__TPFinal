@@ -230,14 +230,10 @@ void editarLibro_Persistencia()
                     {
                         printf(" Opción invalida! \n");
                     }
-                }while(estado!=48 && estado!=49 && estado!=10); //VALORES ASCII 0=48 1=49 10=Intro
+                }while(estado!=48 && estado!=49 && estado!=10);
                 if(estado==48)
                 {
                     libroEditado.activo=0;
-                }
-                else if(estado==10)
-                {
-                    libroEditado.activo=libro.activo;
                 }
                 else
                 {

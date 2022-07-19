@@ -65,7 +65,7 @@ void registrarse_Persistencia()
         {
             printf("Su ID (automático) es: %d\n", lector.id); // se genera buscando el ultimo y le sumo 1.
 
-            lector.validos = 0;
+            lector.validos=0;
             const int TECLA_ESC=27;
             int TeclaUsuario=0;
             do
@@ -104,7 +104,8 @@ void registrarse_Persistencia()
                     printf("Error: no se encuentra ID, el libro no existe.\n");
                 }
 
-                printf("¿Desea cargar otro libro? S/N: \n");
+                printf("\n>>> Para continuar cargando presione una tecla. \n");
+                printf(">>> Para salir presione ESC. \n");
                 fflush(stdin);
                 TeclaUsuario = getch();
             }
@@ -112,7 +113,7 @@ void registrarse_Persistencia()
             {
                 printf("El máximo de libros favoritos es 10.\n");
             }
-
+            // Una vez cargado todo lo agrego al archivo.
             registrarLector(&lector);
             printf("                Cargado con éxito!!!!\n");
             fclose(archivo);
@@ -173,12 +174,12 @@ void mostrarLector_Persistencia(const stLector lector)
     {
         printf("  Estado Activo: \t\t|  dado de baja (%i) \n", lector.activo);
     }
-    printf("  Nº de libros favoritos: \t|  %i\n", lector.validos);
+    printf("  Nº de libros favoritos: \t|  %i\n ", lector.validos);
 
-    for(int i = 1; i < lector.validos && i < 11; i++) // i < 11 (10 max libros fav)
+    for(int i = 0; i < lector.validos && i < 10; i++) // i<10 (10 max libros fav)
     {
         devolverNombreLibro(&nombreLibroFavorito,lector.listaFavoritos[i]);
-        printf("  Libro favorito %i,   \t\t|  Código: %d \tNombre: %s",i,lector.listaFavoritos[i],nombreLibroFavorito);
+        printf(" Libro favorito %i,   \t\t|  Código: %d \tNombre: %s",i,lector.listaFavoritos[i],nombreLibroFavorito);
     }
     printf("+-------------------------------+--------------------------------------------------+\n");
 }
@@ -326,7 +327,8 @@ void modificarLector_Persistencia(const int indice)
             {
                 printf("Error: no se encuentra ID, el libro no existe.\n");
             }
-            printf("¿Desea cargar otro libro? S/N: \n");
+            printf("\n>>> Para continuar cargando presione una tecla. \n");
+            printf(">>> Para salir presione ESC. \n");
             fflush(stdin);
             TeclaUsuario = getch();
         }

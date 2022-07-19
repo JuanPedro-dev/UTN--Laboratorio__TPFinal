@@ -8,6 +8,5 @@ void editarLibro();
 void borrarLibros();
 int validarLibro(int idABuscar);
 void mostrarLibro();
-void darDeAltaLibros();
-
+void darDeAltaLibros_Persistencia()
 #endif // LIBROS_H_INCLUDED
